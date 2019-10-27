@@ -1,0 +1,237 @@
+
+
+body{
+    height:100vh;
+    width: 100%;
+    background-image:    url(../imagenes/pantalla1.jpg); 
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    background-attachment: fixed; 
+    display:flex;     
+    flex-direction:column;       
+}
+
+
+#seccion1{
+    display:flex;
+    height:15%;
+    width:100%; 
+    justify-content: center;
+   
+}
+.barrasVida{
+    border: 0.5px;
+    display:flex;
+    height:20px;
+    width: 400px;
+    background-color:red;
+    margin:20px;
+    font-weight: bold;
+}
+.boxTurno{
+    border: 0.5px;
+    display:flex;
+    height:50px;
+    width: 50px;
+    background-color:white;
+    margin:20px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+#seccion2{
+    display:grid;
+    grid-template-columns: 33.33% 33.33% 33.33% ;
+    grid-template-rows: 100%;
+    height:25%;
+    width:100%; 
+    align-items: flex-end;
+    justify-items: center;
+}
+/* #personaje12{
+    grid-column:1/2;
+    grid-row: 1/1;
+    height:150px;
+    width:150px;
+} */
+#botonJugar{
+    display:block;
+    height:50px;
+    width:100px;
+    grid-column:2/3;
+    grid-row:1/1;
+}
+
+
+
+/* #personaje2{
+    grid-column:3/4;
+    grid-row:1/1;
+    height:150px;
+    width:150px;
+
+} */
+#seccion3{
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100%;
+    height:25%;
+    width:100%; 
+    align-items: flex-end;
+    justify-items: center;
+}
+#botonStart{
+    display: none;
+    height:50px;
+    width:100px;
+    grid-column:3/4;
+    grid-row:1/1;
+}
+
+#dañoPlayer1{
+    border: 0.5px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    text-justify: center;
+    display:flex;
+    grid-column:1/2;
+    grid-row:1/2;
+    height: 100px;
+    width: 150px;
+    font-weight: bold;
+    padding:10px;
+   
+}
+#dañoPlayer2{
+    display:flex;
+    align-items: center;
+    text-justify: center;
+    background-color:white;
+    grid-column:5/6;
+    grid-row:1/2;
+    height: 100px;
+    width: 150px;
+    font-weight: bold;
+    padding:10px;
+}
+#personaje1{
+    grid-column:2/3 ;
+    grid-row:1/2;
+    height:200px;
+    width:150px;
+}
+#botonComenzarJugar{
+    display:block;
+    grid-column:3/4;
+    grid-row: 1/2;
+    height:50px;
+    width:100px;
+}
+#personaje2{
+    grid-column:4/5 ;
+    grid-row:1/2;
+    height:200px;
+    width:150px;
+}
+#seccion4{
+    display:grid;
+    height:35%;
+    width:100%; 
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+    align-items: flex-end;
+    justify-items: center;
+}
+
+#seleccionPersonajes{
+    display:grid;
+    grid-column:2/3;
+    grid-row:1/2;
+    height:100%;
+    width:100%;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.lineasEstadisticas{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color:white;
+    margin:15px;
+    padding:15px;
+}
+#boton1{
+    display:flex;
+    grid-row: 1/2;
+    grid-column: 1/2;   
+    height:100%;
+    width:90%;
+}
+#boton2{
+    grid-row: 2/3;
+    grid-column: 2/3;  
+    height:100%;
+    width:90%; 
+}
+#boton3{
+    grid-row: 1/2;
+    grid-column: 3/4;  
+    width:90%;
+    height:100%;
+
+}
+#boton4{
+    grid-row: 2/3;
+    grid-column: 4/5; 
+    height:100%;
+    width:90%; 
+
+}
+#boton5{
+    height:100%;
+    width:90%;
+    grid-row: 1/2;
+    grid-column: 5/6;   
+}
+#boton6{
+    grid-row: 2/3;
+    grid-column: 1/2;  
+    height:100%;
+    width:90%;  
+}
+#boton7{
+    grid-row: 1/2;
+    grid-column: 2/3; 
+    height:100%;
+    width:90%;   
+}
+#boton8{
+    grid-row: 2/3;
+    grid-column: 3/4;  
+    height:100%;
+    width:90%;  
+}
+#boton9{
+    grid-row: 1/2;
+    grid-column: 4/5; 
+    height:100%;
+    width:90%;   
+}
+#boton10{
+    grid-row: 2/3;
+    grid-column: 5/6; 
+    height:100%;
+    width:90%;   
+}
+
+
+
+
+
+
+
+
+
+

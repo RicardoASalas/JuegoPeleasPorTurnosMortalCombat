@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="seccion1" class="item3">
+        <span id="vidaPersonaje1" class="barrasVida"></span>
+        <span id="turno1" class="boxTurno">P1</span>
+        <span id="turno2" class="boxTurno">P2</span>
+        <span id="vidaPersonaje2" class="barrasVida"></span>
+    </div>
+    <div id="seccion2" class="contenido1">  
+        <button id="botonJugar" onclick="pantallaSeleccion()" class="items1">JUGAR</button>  
+        
+    </div>
+    <div id="seccion3" class="contenido2">
+        <span id="dañoPlayer1" class=item3></span>
+        <img src=""  id="personaje1" class="item3" alt="personaje1"> 
+        <button id="botonStart" onclick="juego.jugar()" class="items1">START FIGHT</button>   
+        <img src=""  id="personaje2" class="item3" alt="personaje2">
+        <span id="dañoPlayer2" class="item3"></span>
+    </div>
+    <div id="seccion4">
+            <div id="estadistica">
+                <span id="linea1" class="lineasEstadisticas"></span>
+                <span id="linea2" class="lineasEstadisticas"></span>
+                <span id="linea3" class="lineasEstadisticas"></span>
+                <span id="linea4" class="lineasEstadisticas"></span>
+                <span id="linea5" class="lineasEstadisticas"></span>
+                <span id="linea6" class="lineasEstadisticas"></span>
+            </div> 
+            <div id="seleccionPersonajes">
+                <img src="imagenes/1.png" onclick="juego.crearEquipos(this.className)" id="boton1" class="johnnyCage">
+                <img src="imagenes/2.png" onclick="juego.crearEquipos(this.className)" id="boton2" class="scorpion">
+                <img src="imagenes/3.png" onclick="juego.crearEquipos(this.className)" id="boton3" class="liuKang">
+                <img src="imagenes/4.png" onclick="juego.crearEquipos(this.className)" id="boton4" class="kitana">
+                <img src="imagenes/5.png" onclick="juego.crearEquipos(this.className)" id="boton5" class="raiden">
+                <img src="imagenes/6.png" onclick="juego.crearEquipos(this.className)" id="boton6" class="baraka"> 
+                <img src="imagenes/7.png" onclick="juego.crearEquipos(this.className)" id="boton7" class="shangTsung">
+                <img src="imagenes/8.png" onclick="juego.crearEquipos(this.className)" id="boton8" class="kano">
+                <img src="imagenes/9.png" onclick="juego.crearEquipos(this.className)" id="boton9" class="reptile">
+                <img src="imagenes/10.png" onclick="juego.crearEquipos(this.className)" id="boton10" class="sonyaBlade">
+            </div>
+            <button id="botonComenzarJugar" onclick="pantallaCombate()" class="item2">COMENZAR A JUGAR</button>
+            
+            
+    </div>
+    
+
+    <script src="js/personaje.js"></script>
+    <script src="js/juego.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

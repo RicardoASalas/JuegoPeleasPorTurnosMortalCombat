@@ -6,7 +6,6 @@ function pantallaSeleccion(){
     for(i=1;i<11;i++){
         document.getElementById("boton"+i).style.display="block";
     }
-    document.getElementById("estadistica").style.display="none";
     document.getElementById("seccion2").style.display="none";
     document.getElementById("seccion4").style.display="grid";
     document.getElementById("seleccionPersonajes").style.display="grid";

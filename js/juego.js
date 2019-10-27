@@ -160,6 +160,9 @@ let juego={
     },
     
     jugar(){
+        document.getElementById('personaje1').style.display="block";
+        document.getElementById('personaje2').style.display="block";
+
        
         // for(i=0;i<3;i++) {
         //     this.player1[i].vida=100;
@@ -216,8 +219,11 @@ let juego={
         
            if(this.player1[this.p1].vida<=0){
                 if(this.p1<2){
+                    
                     console.log(this.player1[this.p1].nombre+(" ha muerto, entra en combate " +this.player1[this.p1+1].nombre));
-                    document.getElementById("vidaPersonaje1").innerHTML=this.player1[this.p1].nombre+" ------------- HA MUERTO!!";
+                    document.getElementById("vidaPersonaje1").innerHTML=this.player1[this.p1+1].nombre+" ------------- "+this.player1[this.p1+1].vida+" puntos de vida";
+                    document.getElementById("dañoPlayer1").innerHTML=this.player1[this.p1].nombre+" ------------- HA MUERTO!!, entra en combate " +this.player1[this.p1+1].nombre;
+
                     document.getElementById('personaje1').src= juego.player1[this.p1+1].aspecto;
                 }else{
                     console.log(this.player1[this.p1].nombre+(" ha muerto"));
@@ -227,7 +233,8 @@ let juego={
             }else if(this.player2[this.p2].vida<=0){
                 if(this.p2<2){
                     console.log(this.player2[this.p2].nombre+(" ha muerto, entra en combate " +this.player2[this.p2+1].nombre));
-                    document.getElementById("vidaPersonaje2").innerHTML=this.player2[this.p2].nombre+" ------------- HA MUERTO!!";
+                    document.getElementById("vidaPersonaje1").innerHTML=this.player1[this.p2+1].nombre+" ------------- "+this.player1[this.p2+1].vida+" puntos de vida";
+                    document.getElementById("dañoPlayer2").innerHTML=this.player2[this.p2].nombre+" ------------- HA MUERTO!!, entra en combate " +this.player2[this.p2+1].nombre;
                     document.getElementById('personaje2').src= juego.player2[this.p2+1].aspecto;
                 }else{
                     console.log(this.player2[this.p2].nombre+(" ha muerto"));
@@ -244,37 +251,36 @@ let juego={
 
     estadisticas(){
 
-        document.getElementById("estadistica").style.display="block";
+        
         document.getElementById("botonJugar").style.display="block";
         document.getElementById("seccion1").style.display="none";
         document.getElementById("seccion3").style.display="none";
         document.getElementById("seccion4").style.display="grid";
         document.getElementById("seccion2").style.display="grid";
+        document.getElementById("seleccionPersonajes").style.display="none";
+
         
         //console.log("----------------------------");
         if(this.p1>2){
-      
-            document.getElementById("linea1").innerHTML=`   --------------------------`;
-            document.getElementById("linea2").innerHTML=`   |      ESTADISTICA       |`;
-            document.getElementById("linea3").innerHTML=`    -------------------------`;
 
-            document.getElementById("linea4").innerHTML=`      HA GANADO PLAYER 1`;
-
-            document.getElementById("linea5").innerHTML=` player1 ha atacado ${this.contador1} veces`;
-
-            document.getElementById("linea6").innerHTML=` player2 ha atacado ${this.contador2} veces`;
+            alert(`   
+            --------------------------
+            |      ESTADISTICA       |
+            -------------------------
+            HA GANADO PLAYER 1
+            player1 ha atacado ${this.contador1} veces
+            player2 ha atacado ${this.contador2} veces`);
+           
             //console.log(`HA GANADO player2`);
         }else if(this.p2>2){
       
-            document.getElementById("linea1").innerHTML=`   --------------------------`;
-            document.getElementById("linea2").innerHTML=`   |      ESTADISTICA       |`;
-            document.getElementById("linea3").innerHTML=`    -------------------------`;
-
-            document.getElementById("linea4").innerHTML=`       HA GANADO PLAYER 1`;
-
-            document.getElementById("linea5").innerHTML=` player1 ha atacado ${this.contador1} veces`;
-
-            document.getElementById("linea6").innerHTML=` player2 ha atacado ${this.contador2} veces`;
+            alert(`   
+            --------------------------
+            |      ESTADISTICA       |
+            -------------------------
+            HA GANADO PLAYER 2
+            Player1 ha atacado ${this.contador1} veces
+            Player2 ha atacado ${this.contador2} veces`);
             //console.log(`HA GANADO player1`);
         }
       

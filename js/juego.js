@@ -89,7 +89,7 @@ let juego={
 
     }
     }else if(this.player2.length < 3){
-        
+
         switch(person){
             case 'johnnyCage':
                 johnnyCage = new personaje('Johnny Cage', 25 ,7 ,3,'imagenes/johnnyCage2.gif');
@@ -269,7 +269,7 @@ let juego={
             --------------------------
             |      ESTADISTICAS      |
             --------------------------
-            HA GANADO PLAYER 1
+            HA GANADO PLAYER 2
             player1 ha atacado ${this.contador1} veces
             player2 ha atacado ${this.contador2} veces`);
            
@@ -280,7 +280,7 @@ let juego={
             --------------------------
             |      ESTADISTICAS       |
             --------------------------
-            HA GANADO PLAYER 2
+            HA GANADO PLAYER 1
             Player1 ha atacado ${this.contador1} veces
             Player2 ha atacado ${this.contador2} veces`);
            

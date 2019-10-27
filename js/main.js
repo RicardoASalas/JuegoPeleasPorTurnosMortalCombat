@@ -1,8 +1,10 @@
+//FICHERO PRINCIPAL DONDE SE VAN A CARGAR LAS DIFERENTES PANTALLAS DEL JUEGO
+
 document.getElementById("seccion1").style.display="none";
 document.getElementById("seccion3").style.display="none";
 document.getElementById("seccion4").style.display="none";
 
-function pantallaSeleccion(){
+function pantallaSeleccion(){//PANTALLA DONDE SE SELECCIONARAN LOS LUCHADORES
     for(i=1;i<11;i++){
         document.getElementById("boton"+i).style.display="block";
     }
@@ -14,8 +16,13 @@ function pantallaSeleccion(){
     
 }
 
-function pantallaCombate(){
+//PANTALLA DONDE TENDRA LUGAR LA BATALLA ENTRE LUCHADORES, 
     
+//SE ACTIVAN Y DESACTIVAN 
+// ALGUNAS CAJAS DEL FICHERO index.html PARA QUE SE MUESTREN O SE ESCONDAN LOS 
+//ELEMENTOS SEGUN CONVENGA.
+
+function pantallaCombate(){
     document.getElementById("personaje1").style.display="block";
     document.getElementById("personaje1").style.display="block";
 
